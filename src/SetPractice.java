@@ -34,9 +34,9 @@ public class SetPractice {
 	/**
 	 * Explore behavior of a Set.
 	 */
-	public static void setExplorer(HashSet<String> set ) {
+	public static void setExplorer () {
 		// 1. Create a HashSet and add strings: dog, ant, bird, elephant, cat
-		
+		Set<String> set  = new HashSet();
 		addAll(set , "dog", "ant", "bird", "elephant", "cat");
 		
 		// 2. Print elements in the set using an Iterator over the Set.
@@ -71,6 +71,7 @@ public class SetPractice {
 		
 		// 9. Repeat the exercises using a TreeSet instead of HashSet.
 		//  What is different when you use TreeSet?
+		System.out.println("Treeset");
 		Set<String> treeset  = new TreeSet();
 		addAll(set , "cat","elephant", "bird" , "ant", "dog");
 		print(set);
